@@ -22,6 +22,9 @@ const NavBar = () => {
         <li className="mr-6">
           <Link to="/budget" className="text-white hover:text-gray-300">Budget</Link>
         </li>
+        <li className="mr-6">
+          <Link to="/about" className="text-white hover:text-gray-300">About</Link>
+        </li>
       </ul>
     </nav>
   );
