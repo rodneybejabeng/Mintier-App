@@ -22,7 +22,7 @@ function LandingPage() {
   const handleTryBetaClick = (event) => {
     event.preventDefault(); // Prevent default form submission behavior
     if (isValidEmail) {
-      navigate('/credit');  // Adjust this to route to the appropriate page
+      navigate('/about');  // Adjust this to route to the appropriate page
     } else {
       alert('Please enter a valid email address to try the beta.');
     }
