@@ -7,6 +7,7 @@ import Credit from './pages/Credit';
 import Expenses from './pages/Expenses';
 import Budget from './pages/Budget';
 import About from './pages/About';
+import Dashboard from './pages/Dashboard';
 
 
 function AppWrapper() {
@@ -26,6 +27,7 @@ function App() {
       {location.pathname !== "/" && <NavBar />}
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/networth" element={<NetWorth />} />
         <Route path="/credit" element={<Credit />} />
         <Route path="/expenses" element={<Expenses />} />

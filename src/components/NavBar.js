@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav className="bg-gray-800 text-white p-4">
       <ul className="flex justify-between">
         <li className="mr-6">
-          <Link to="/" className="text-white hover:text-gray-300">Home</Link>
+          <Link to="/dashboard" className="text-white hover:text-gray-300">Dashboard</Link>
         </li>
         <li className="mr-6">
           <Link to="/networth" className="text-white hover:text-gray-300">Net Worth</Link>
