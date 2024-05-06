@@ -7,7 +7,7 @@ import Credit from './pages/Credit';
 import Expenses from './pages/Expenses';
 import Budget from './pages/Budget';
 import About from './pages/About';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 
 function AppWrapper() {

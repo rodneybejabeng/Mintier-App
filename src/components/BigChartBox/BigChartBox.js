@@ -1,6 +1,6 @@
 import React from 'react';
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import './bigChartBox.css';  // Note the change from SCSS to CSS
+import './BigChartBox.css';  // Note the change from SCSS to CSS
 
 const data = [
   { name: "Sun", books: 4000, clothes: 2400, electronic: 2400 },

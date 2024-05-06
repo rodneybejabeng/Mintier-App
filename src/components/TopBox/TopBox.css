@@ -1,0 +1,72 @@
+.topBox h1 {
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 1200px) { /* Assuming 'xxl' breakpoint */
+    .topBox h1 {
+      font-size: 24px;
+    }
+  }
+  
+  .topBox .list .listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .topBox .list .listItem .user {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .topBox .list .listItem .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  @media (min-width: 992px) { /* Assuming 'lg' breakpoint */
+    .topBox .list .listItem .user img {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 1200px) { /* Assuming 'xxl' breakpoint */
+    .topBox .list .listItem .user img {
+      display: none;
+    }
+  }
+  
+  .topBox .list .listItem .user .userTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .topBox .list .listItem .user .userTexts .username {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .topBox .list .listItem .user .userTexts .email {
+    font-size: 12px;
+  }
+  
+  @media (min-width: 992px) { /* Assuming 'lg' breakpoint */
+    .topBox .list .listItem .user .userTexts .email {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 1200px) { /* Assuming 'xxl' breakpoint */
+    .topBox .list .listItem .user .userTexts .email {
+      display: none;
+    }
+  }
+  
+  .topBox .list .listItem .amount {
+    font-weight: 500;
+  }
+  

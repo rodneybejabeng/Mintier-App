@@ -1,6 +1,6 @@
 import React from 'react';
 import { Bar, BarChart, ResponsiveContainer, Tooltip } from 'recharts';
-import './barChartBox.scss';
+import './BarChartBox.css';
 
 const BarChartBox = ({ title, color, dataKey, chartData }) => {
   return (
