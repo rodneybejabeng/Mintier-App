@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Assuming you are using Tailwind with your traditional CSS */
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff; /* Ensuring the background is solid for better shadow visibility */
+    border: 2px solid #f0f0f0;
+    @apply shadow-xl; /* Tailwind utility for large shadows */
+  }
+  

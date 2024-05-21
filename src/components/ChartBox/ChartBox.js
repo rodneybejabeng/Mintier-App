@@ -12,7 +12,7 @@ const ChartBox = ({ color, icon, title, dataKey, number, percentage, chartData }
           <span>{title}</span>
         </div>
         <h1>{number}</h1>
-        <Link to="/" style={{ color: color }}>
+        <Link to="/expenses" style={{ color: color }}>
           View all
         </Link>
       </div>

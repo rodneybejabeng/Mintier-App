@@ -8,6 +8,7 @@ import Expenses from './pages/Expenses';
 import Budget from './pages/Budget';
 import About from './pages/About';
 import Dashboard from './pages/Dashboard/Dashboard';
+import SignUp from './pages/SignUp';
 
 
 function AppWrapper() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/expenses" element={<Expenses />} />
         <Route path="/budget" element={<Budget />} />
         <Route path="/about" element={<About />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </div>
   );

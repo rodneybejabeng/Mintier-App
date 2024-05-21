@@ -16,7 +16,7 @@ import "./Dashboard.css";
 
 const Dashboard = () => {
   return (
-    <div className="home">
+    <div className="dashboard">
       <div className="box box1"><TopBox /></div>
       {/* <div className="box box2"><ChartBox {...chartBoxUser} /></div> */}
       <div className="box box3"><ChartBox /></div>
