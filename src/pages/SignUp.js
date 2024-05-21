@@ -1,15 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./SignUp.css";
+import Mintier from '../logos/Mintier-logo.svg'; // Ensure the path is correct
+import Google from '../logos/google-icon.svg'; // Ensure the path is correct
 
 const SignUp = () => {
   return (
     <div className="signup-container">
-      <div className="logo">Mintier-logo.svg</div>
+      <img src={Mintier} alt="Mintier Logo" className="signup-logo" />
       <h2>Sign up to start your free trial</h2>
-      <p>Try Monarch free, cancel anytime.</p>
-      <button className="google-signin">Continue with Google</button>
+      <p>Try Mintier free, cancel anytime.</p>
+      <button className="google-signin">
+        <img src={Google} alt="Google sign-in" className="google-logo" />
+        Continue with Google
+      </button>
       <div className="or">OR</div>
-      <input type="email" placeholder="Your Email Address" />
+      <input type="email" placeholder="Your Email Address" className="email-input" />
       <button className="email-signup">Sign up with email</button>
       <div className="terms">
         By clicking the button above, you agree to our <a href="/terms">Terms of Use</a> and <a href="/privacy">Privacy Policy</a>.

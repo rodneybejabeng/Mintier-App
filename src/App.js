@@ -10,7 +10,6 @@ import About from './pages/About';
 import Dashboard from './pages/Dashboard/Dashboard';
 import SignUp from './pages/SignUp';
 
-
 function AppWrapper() {
   return (
     <Router>
@@ -22,10 +21,12 @@ function AppWrapper() {
 function App() {
   const location = useLocation();  // Get the current location
 
+  // Only render NavBar if not on the home or signup pages
+  const showNavBar = location.pathname !== "/" && location.pathname !== "/signup";
+
   return (
-    <div>
-      {/* Conditionally render NavBar if not on the landing page */}
-      {location.pathname !== "/" && <NavBar />}
+    <div className="body-container">
+      {showNavBar && <NavBar />}
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -36,7 +37,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
+      
     </div>
+    
   );
 }
 

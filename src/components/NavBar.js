@@ -11,7 +11,7 @@ const NavBar = () => {
     <nav className="bg-gray-800 text-white p-.75">
       <ul className="flex justify-between items-center">
         <li className="mr-6">
-          <Link to="/"> {/* Link to the home page */}
+          <Link to="/"> 
             <img src={logo} alt="Mintier Logo" className="h-14 w-14" />
           </Link>
         </li>
