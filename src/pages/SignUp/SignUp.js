@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./SignUp.css";
-import Mintier from '../logos/Mintier-logo.svg'; // Ensure the path is correct
-import Google from '../logos/google-icon.svg'; // Ensure the path is correct
+import Mintier from '../../logos/Mintier-logo.svg'; // Ensure the path is correct
+import Google from '../../logos/google-icon.svg' // Ensure the path is correct
 
 const SignUp = () => {
   return (
