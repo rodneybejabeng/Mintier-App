@@ -1,6 +1,5 @@
 /* SignIn.css */
-
-.signin-container {
+body .signin-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +7,7 @@
     background-color: #f7f8fb;
 }
 
-.signin-form {
+body .signin-form {
     padding: 40px;
     background: white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -20,17 +19,17 @@
     max-width: 400px;
 }
 
-.signin-logo {
+body .signin-logo {
     width: 60px;
     margin-bottom: 20px;
 }
 
-h2 {
+body h2 {
     margin-bottom: 20px;
     color: #333;
 }
 
-input {
+body input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -38,7 +37,7 @@ input {
     border-radius: 4px;
 }
 
-.signin-btn {
+body .signin-btn {
     width: 100%;
     padding: 10px;
     background-color: #4285F4;
@@ -48,12 +47,11 @@ input {
     cursor: pointer;
 }
 
-.links {
+body .links {
     margin-top: 10px;
 }
 
-.links a {
+body .links a {
     color: #4285F4;
     text-decoration: none;
 }
-
