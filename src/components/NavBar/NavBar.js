@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../logos/Mintier-logo.svg'; // Make sure the path is correct
+import logo from '../../logos/Mintier-logo.svg'; // Make sure the path is correct
 import './NavBar.css';
 
 const NavBar = () => {

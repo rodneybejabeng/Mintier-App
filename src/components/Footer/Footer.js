@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css'; // Make sure to create this CSS file
-import instagramIcon from '../logos/instagram.svg';
-import linkedinIcon from '../logos/linkedin.svg';
+import instagramIcon from '../../logos/instagram.svg';
+import linkedinIcon from '../../logos/linkedin.svg';
 
 const Footer = () => {
   return (

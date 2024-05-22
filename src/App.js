@@ -60,7 +60,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import LandingPage from './LandingPage';
 import NetWorth from './pages/NetWorth';
 import Credit from './pages/Credit';
@@ -72,7 +72,7 @@ import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const location = useLocation();  // Get the current location
