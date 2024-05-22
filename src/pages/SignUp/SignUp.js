@@ -8,8 +8,9 @@ const SignUp = () => {
   return (
     <div className="main-container"> {/* This should wrap the signup container */}
       <div className="signup-container">
-        <Link to="/">
-          <img src={Mintier} alt="Mintier Logo" className="signup-logo" />
+        <Link to="/" className="logo-container">
+                    <img src={Mintier} alt="Mintier Logo" className="signin-logo" />
+                    <span className="logo-text">Mintier</span>
         </Link>
         <h2>Sign up to start your free trial</h2>
         <p>Try Mintier free, cancel anytime.</p>

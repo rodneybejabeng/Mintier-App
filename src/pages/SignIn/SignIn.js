@@ -16,9 +16,9 @@ const SignIn = () => {
     return (
         <div className="signin-container">
             <form onSubmit={handleSignIn} className="signin-form">
-                {/* Link the logo to the home page */}
-                <Link to="/">
+                <Link to="/" className="logo-container">
                     <img src={logo} alt="Mintier Logo" className="signin-logo" />
+                    <span className="logo-text">Mintier</span>
                 </Link>
                 <h2>Sign In</h2>
                 <input
@@ -37,7 +37,7 @@ const SignIn = () => {
                 />
                 <button type="submit" className="signin-btn">Sign In</button>
                 <div className="links">
-                    <Link to="/signup">Don't have an account? Sign Up</Link>
+                    Don't have an account? <Link to="/signup">Sign Up</Link>
                 </div>
             </form>
         </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
 /* SignIn.css */
 body .signin-container {
     display: flex;
@@ -19,9 +21,22 @@ body .signin-form {
     max-width: 400px;
 }
 
+body .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 body .signin-logo {
     width: 60px;
-    margin-bottom: 20px;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+body .logo-text {
+    font-size: 24px; /* Adjust size as needed */
+    color: #333; /* Text color */
+    font-family: 'Lora', serif; /* Using Lora font */
 }
 
 body h2 {
@@ -29,12 +44,14 @@ body h2 {
     color: #333;
 }
 
-body input {
+body input[type="email"],
+body input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
 body .signin-btn {
