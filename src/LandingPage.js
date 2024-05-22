@@ -42,7 +42,7 @@ function LandingPage() {
 
         const isEmailValid = await verifyEmailWithVerifalia(email);
         if (isEmailValid) {
-            navigate('/about');  // Navigate if valid
+            navigate('/signup');  // Navigate if valid
         } else {
             alert('Please enter a valid email address to try the beta.');
         }
