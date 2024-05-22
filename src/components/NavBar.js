@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../logos/Mintier-logo.svg'; // Make sure the path is correct
+import './NavBar.css';
 
 const NavBar = () => {
   const location = useLocation();
@@ -8,7 +9,7 @@ const NavBar = () => {
   const isActive = (path) => location.pathname === path ? 'text-blue-500 shadow-lg brightness-125' : 'hover:text-gray-300';
 
   return (
-    <nav className="bg-gray-800 text-white p-.75">
+    <nav className="navigation">
       <ul className="flex justify-between items-center">
         <li className="mr-6">
           <Link to="/"> 
