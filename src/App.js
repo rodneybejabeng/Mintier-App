@@ -16,6 +16,7 @@
 // import SignIn from './pages/SignIn/SignIn';
 // import Terms from './pages/Terms';
 // import Privacy from './pages/Privacy';
+// import Footer from './components/Footer';
 
 // function AppWrapper() {
 //   return (
@@ -71,6 +72,7 @@ import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
+import Footer from './components/Footer';
 
 function App() {
   const location = useLocation();  // Get the current location
@@ -96,6 +98,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
