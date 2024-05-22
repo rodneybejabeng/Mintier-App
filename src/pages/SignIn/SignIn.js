@@ -16,7 +16,10 @@ const SignIn = () => {
     return (
         <div className="signin-container">
             <form onSubmit={handleSignIn} className="signin-form">
-                <img src={logo} alt="Mintier Logo" className="signin-logo" />
+                {/* Link the logo to the home page */}
+                <Link to="/">
+                    <img src={logo} alt="Mintier Logo" className="signin-logo" />
+                </Link>
                 <h2>Sign In</h2>
                 <input
                     type="email"
