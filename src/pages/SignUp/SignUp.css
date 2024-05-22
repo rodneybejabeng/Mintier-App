@@ -1,13 +1,14 @@
 /* SignUp.css */
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    height: 100vh; /* Full height of the viewport */
-  }
   
+.main-container {
+  display: flex;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full height of the viewport */
+  width: 100%; /* Cover full width to avoid any alignment issues */
+  background-color: #f7f8fb; /* Assuming you want a specific background color */
+}
+
   .signup-logo {
     height: 50px;
     margin-bottom: 20px;
@@ -75,13 +76,7 @@
   .terms a, .signin a {
     color: #007bff;
   }
-  
-  .body-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-  }
+
   .google-signin {
     display: flex;
     align-items: center;
@@ -106,7 +101,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centers content vertically */
+    justify-content: center; 
     padding: 20px;
     margin: auto;
     max-width: 400px;
