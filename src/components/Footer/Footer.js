@@ -21,7 +21,7 @@ const Footer = () => {
             <img src={linkedinIcon} alt="LinkedIn" />
           </a>
         </div>
-        <p className="footer-rights">© Rodney Bejabeng/Mintier. All rights reserved.</p>
+        <p className="footer-rights">© Rodney Bejabeng/Cloud Money. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./SignUp.css";
-import Mintier from '../../logos/Mintier-logo.svg'; // Ensure the path is correct
+import ClearMoney from '../../logos/ClearMoney-logo.svg'; // Ensure the path is correct
 import Google from '../../logos/google-icon.svg'; // Ensure the path is correct
 
 const SignUp = () => {
@@ -9,11 +9,11 @@ const SignUp = () => {
     <div className="main-container"> {/* This should wrap the signup container */}
       <div className="signup-container">
         <Link to="/" className="logo-container">
-                    <img src={Mintier} alt="Mintier Logo" className="signin-logo" />
-                    <span className="logo-text">Mintier</span>
+                    <img src={ClearMoney} alt="Clear Money Logo" className="signin-logo" />
+                    <span className="logo-text">Clear Money</span>
         </Link>
         <h2>Sign up to start your free trial</h2>
-        <p>Try Mintier free, cancel anytime.</p>
+        <p>Try Clear Money free, cancel anytime.</p>
         <button className="google-signin">
           <img src={Google} alt="Google sign-in" className="google-logo" />
           Continue with Google

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../logos/Mintier-logo.svg'; // Make sure the path is correct
+import logo from '../../logos/ClearMoney-logo.svg'; // Make sure the path is correct
 import './NavBar.css';
 
 const NavBar = () => {
@@ -13,7 +13,7 @@ const NavBar = () => {
       <ul className="flex justify-between items-center">
         <li className="mr-6">
           <Link to="/"> 
-            <img src={logo} alt="Mintier Logo" className="h-14 w-14" />
+            <img src={logo} alt="Clear Money Logo" className="h-14 w-14" />
           </Link>
         </li>
         <li className="mr-6">

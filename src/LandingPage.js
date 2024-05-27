@@ -50,7 +50,7 @@ function LandingPage() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-black to-blue-400 text-white">
-            <h1 className="text-4xl font-bold">Welcome to Mintier (A Finance App)</h1>
+            <h1 className="text-4xl font-bold">Welcome to Clear Money (A Finance App)</h1>
             <p className="text-xl mt-4">Manage your finances with the insight of AI.</p>
             <form onSubmit={handleTryBetaClick} className="w-full max-w-xs">
                 <input

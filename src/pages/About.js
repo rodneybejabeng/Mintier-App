@@ -22,8 +22,8 @@ const About = () => {
            backgroundPosition: 'center'
          }}>
       <div className="z-10 p-4" style={{ height: '200vh' }}> {/* Adjust height as needed */}
-        <h1 className="text-4xl font-bold">What is Mintier?</h1>
-        <p>This is the about Mintier page. Talk about what Mintier is.</p>
+        <h1 className="text-4xl font-bold">What is Clear Money?</h1>
+        <p>This is the about Clear Money page. Talk about what Clear Money is.</p>
       </div>
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-center text-white text-sm opacity-80 animate-pulse">
         <span>Scroll Down</span>

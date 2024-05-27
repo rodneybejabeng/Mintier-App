@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './SignIn.css';
-import logo from '../../logos/Mintier-logo.svg'; 
+import logo from '../../logos/ClearMoney-logo.svg'; 
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
@@ -17,8 +17,8 @@ const SignIn = () => {
         <div className="signin-container">
             <form onSubmit={handleSignIn} className="signin-form">
                 <Link to="/" className="logo-container">
-                    <img src={logo} alt="Mintier Logo" className="signin-logo" />
-                    <span className="logo-text">Mintier</span>
+                    <img src={logo} alt="Clear Money Logo" className="signin-logo" />
+                    <span className="logo-text">Clear Money</span>
                 </Link>
                 <h2>Sign In</h2>
                 <input
