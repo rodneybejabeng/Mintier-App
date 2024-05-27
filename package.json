@@ -1,5 +1,5 @@
 {
-  "name": "mintier-web-app",
+  "name": "clearmoney-web-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "stop": "react-scripts pkill --signal SIGINT mintier-web-app",
+    "stop": "react-scripts pkill --signal SIGINT clearmoney-web-app",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
