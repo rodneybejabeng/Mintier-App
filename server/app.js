@@ -4,7 +4,9 @@ const app = express();
 
 const PORT = process.env.PORT || 8001;
 
-app.listen(PORT, () => console.log('Server Started'));
+app.listen(PORT, () => console.log('Server Started! on http://localhost:8001'));
+
+app.use(express.static('build'));
 
 const items = [
     {

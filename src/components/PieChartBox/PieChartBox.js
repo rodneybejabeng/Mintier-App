@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './PieChartBox.css';
@@ -11,6 +11,26 @@ const data = [
 ];
 
 const PieChartBox = () => {
+
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/items')
+    .then(res => res.json)
+    .then(data => setItems(data));
+  }, []);
+
+  function renderItems() {
+    return items.map((item, keyIndex) => {
+      return (
+        <div key = {keyIndex}>
+          <h3>{item.name}</h3>
+          <p>Price: {item.price}</p>
+        </div>
+      );
+    });
+  }
+
   return (
     <Link to="/networth" style={{ textDecoration: 'none' }}> {/* Wrap the component in Link */}
       <div className="pieChartBox">
