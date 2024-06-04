@@ -14,14 +14,15 @@
     margin-bottom: 20px;
   }
   
-  h2 {
+  .h2 {
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   
-  p {
+  .p {
     color: #666;
     font-size: 14px;
+    margin-bottom: 10px;
   }
   
   .social-signin .signin-btn {
@@ -48,15 +49,15 @@
     text-align: center;
     margin: 20px 0;
   }
-  
-  .email-input {
+
+  .field-input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
-  
+
   .email-signup {
     width: 100%;
     padding: 10px;

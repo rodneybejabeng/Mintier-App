@@ -73,6 +73,7 @@ import SignIn from './pages/SignIn/SignIn';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Footer from './components/Footer/Footer';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   const location = useLocation();  // Get the current location
@@ -89,6 +90,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="*" element={<NotFoundPage />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/networth" element={<NetWorth />} />

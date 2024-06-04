@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.af637a1e.css",
-    "main.js": "/static/js/main.ee5e8b71.js",
-    "static/js/453.b3dc23b4.chunk.js": "/static/js/453.b3dc23b4.chunk.js",
+    "main.css": "/static/css/main.2f0f0fda.css",
+    "main.js": "/static/js/main.a4dc40fc.js",
+    "static/js/488.a29c49b5.chunk.js": "/static/js/488.a29c49b5.chunk.js",
     "static/media/financial_freedom_3.jpg": "/static/media/financial_freedom_3.a053acc220434b9562cb.jpg",
     "static/media/ClearMoney-logo.svg": "/static/media/ClearMoney-logo.a70842f8b58af483a37cb0678d30da99.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.cbd44c6b10b24faa22f1045865368dc0.svg",
     "static/media/instagram.svg": "/static/media/instagram.a63c9476fa83b33ffc32894544c5ccb7.svg",
     "static/media/google-icon.svg": "/static/media/google-icon.15b6cb611e2ef4ea86dc62873e5c6db5.svg",
     "index.html": "/index.html",
-    "main.af637a1e.css.map": "/static/css/main.af637a1e.css.map",
-    "main.ee5e8b71.js.map": "/static/js/main.ee5e8b71.js.map",
-    "453.b3dc23b4.chunk.js.map": "/static/js/453.b3dc23b4.chunk.js.map"
+    "main.2f0f0fda.css.map": "/static/css/main.2f0f0fda.css.map",
+    "main.a4dc40fc.js.map": "/static/js/main.a4dc40fc.js.map",
+    "488.a29c49b5.chunk.js.map": "/static/js/488.a29c49b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af637a1e.css",
-    "static/js/main.ee5e8b71.js"
+    "static/css/main.2f0f0fda.css",
+    "static/js/main.a4dc40fc.js"
   ]
 }
