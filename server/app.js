@@ -29,17 +29,45 @@ const items = [
     { name: 'item2', price: 500 },
 ];
 
+const adminCredentials = [{
+    name: 'Rodney',
+    email: 'Bejabeng.r@gmail.com',
+    password: 'preston1993',
+    }, {
+    name: 'Rodney',
+    email: 'bejabeng.r@gmail.com',
+    password: 'preston1993',
+    }]
+
 // Routes
-app.post('/api/signup', async (req, res) => {
-    const { name, email, password } = req.body;
-    try {
-        const newUser = new User({ name, email, password });
-        await newUser.save();
-        res.status(201).send("User created successfully");
-    } catch (error) {
-        res.status(500).send("Error creating user: " + error.message);
+// app.post('/api/signup', async (req, res) => {
+//     const { name, email, password } = req.body;
+//     try {
+//         const newUser = new User({ name, email, password });
+//         await newUser.save();
+//         res.status(201).send("User created successfully");
+//     } catch (error) {
+//         res.status(500).send("Error creating user: " + error.message);
+//     }
+// });
+
+// Server-side: part of app.js
+app.post('/api/signin', (req, res) => {
+    const { email, password } = req.body;
+    if (!email || !password) {
+        return res.status(400).json({ message: "Email and password are required" });
+    }
+    const user = adminCredentials.find(u => u.email === email.toLowerCase() && u.password === password);
+    if (user) {
+        res.status(200).json({ message: "Login successful", user: user.name });
+        console.log((`Email: ${email}, Password: ${password} both exists in database!`));
+    } else {
+        res.status(401).json({ message: "Invalid credentials" });
+        console.log(`Email: ${email} does not exist in database!`);
     }
 });
+
+
 
 app.get('/api/items', (req, res) => {
     res.send(items);

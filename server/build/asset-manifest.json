@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2f0f0fda.css",
-    "main.js": "/static/js/main.a4dc40fc.js",
+    "main.js": "/static/js/main.391edf6e.js",
     "static/js/488.a29c49b5.chunk.js": "/static/js/488.a29c49b5.chunk.js",
     "static/media/financial_freedom_3.jpg": "/static/media/financial_freedom_3.a053acc220434b9562cb.jpg",
     "static/media/ClearMoney-logo.svg": "/static/media/ClearMoney-logo.a70842f8b58af483a37cb0678d30da99.svg",
@@ -10,11 +10,11 @@
     "static/media/google-icon.svg": "/static/media/google-icon.15b6cb611e2ef4ea86dc62873e5c6db5.svg",
     "index.html": "/index.html",
     "main.2f0f0fda.css.map": "/static/css/main.2f0f0fda.css.map",
-    "main.a4dc40fc.js.map": "/static/js/main.a4dc40fc.js.map",
+    "main.391edf6e.js.map": "/static/js/main.391edf6e.js.map",
     "488.a29c49b5.chunk.js.map": "/static/js/488.a29c49b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f0f0fda.css",
-    "static/js/main.a4dc40fc.js"
+    "static/js/main.391edf6e.js"
   ]
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './PieChartBox.css';
+// import data from '../../data';
 
 const data = [
   { name: "Mobile", value: 400, color: "#0088FE" },
@@ -34,7 +35,7 @@ const PieChartBox = () => {
   return (
     <Link to="/networth" style={{ textDecoration: 'none' }}> {/* Wrap the component in Link */}
       <div className="pieChartBox">
-        <h1>Leads by Source</h1>
+        <h1>Expenses by Source</h1>
         <div className="chart">
           <ResponsiveContainer width="99%" height={300}>
             <PieChart>
