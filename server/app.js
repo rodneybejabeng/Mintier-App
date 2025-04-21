@@ -1,7 +1,5 @@
-// require('dotenv').config();
 const express = require('express');
-// const mongoose = require('mongoose');
-const User = require('./models/User'); // Adjust the path as necessary
+const User = require('./models/User');
 
 const app = express();
 const PORT = process.env.PORT || 8001;
@@ -9,19 +7,11 @@ const PORT = process.env.PORT || 8001;
 // Middleware to parse JSON
 app.use(express.json());
 
-// Connect to MongoDB
-// mongoose.connect(process.env.DB_URI, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// })
-// .then(() => console.log("MongoDB connected"))
-// .catch(err => console.log(err));
+// Serve static files from the build directory
+app.use(express.static('build'));
 
 // Listen on specified PORT
 app.listen(PORT, () => console.log(`Server Started! on http://localhost:${PORT}`));
-
-app.use(express.static('build'));
-
 
 // Sample data
 const items = [
@@ -37,21 +27,9 @@ const adminCredentials = [{
     name: 'Rodney',
     email: 'bejabeng.r@gmail.com',
     password: 'preston1993',
-    }]
+    }];
 
 // Routes
-// app.post('/api/signup', async (req, res) => {
-//     const { name, email, password } = req.body;
-//     try {
-//         const newUser = new User({ name, email, password });
-//         await newUser.save();
-//         res.status(201).send("User created successfully");
-//     } catch (error) {
-//         res.status(500).send("Error creating user: " + error.message);
-//     }
-// });
-
-// Server-side: part of app.js
 app.post('/api/signin', (req, res) => {
     const { email, password } = req.body;
     if (!email || !password) {
@@ -66,8 +44,6 @@ app.post('/api/signin', (req, res) => {
         console.log(`Email: ${email} does not exist in database!`);
     }
 });
-
-
 
 app.get('/api/items', (req, res) => {
     res.send(items);
