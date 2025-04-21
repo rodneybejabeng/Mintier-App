@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "@heroicons/react": "^2.1.3",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
@@ -11,6 +12,7 @@
     "axios": "^1.7.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "firebase": "^11.6.0",
     "mongodb": "^6.6.2",
     "mongoose": "^8.4.1",
     "react": "^18.3.1",

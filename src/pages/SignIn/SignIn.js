@@ -1,38 +1,39 @@
 // SignIn.js
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './SignIn.css';
 import logo from '../../logos/ClearMoney-logo.svg';
-import axios from 'axios';
+import { useAuth } from '../../components/AuthContext';
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
+    const { login } = useAuth();
     const navigate = useNavigate();
+    const location = useLocation();
 
-    const handleSignIn = (e) => {
-        console.log('got to handle signin');
+    // Get the redirect path from location state or default to dashboard
+    const from = location.state?.from?.pathname || '/dashboard';
+
+    const handleSignIn = async (e) => {
         e.preventDefault();
-        if (email && password) {
-            console.log('got to email and password present!');
-            axios.post('http://localhost:8001/api/signin', { email, password })
-                .then(response => {
-                    console.log(response);
-                    console.log('got to .then() block!');
-                    if (response.status === 200) {
-                        console.log('got to verify status 200');
-                        // localStorage.setItem('user', JSON.stringify(response.data.user));
-                        navigate('/terms'); // Ensure this is the correct path
-                    } else {
-                        console.log('Login failed:', response.data.message);
-                    }
-                })
-                .catch(error => {
-                    console.error('Login error:', error);
-                    alert('Login failed! Check console for details.');
-                });
-        } else {
-            console.error('Email or password is missing!');
+        
+        try {
+            setError('');
+            setLoading(true);
+            
+            // Call the login function from AuthContext
+            await login(email, password);
+            
+            // Navigate to the page the user was trying to access or dashboard
+            navigate(from, { replace: true });
+        } catch (error) {
+            setError('Failed to sign in: ' + error.message);
+            console.error('Login error:', error);
+        } finally {
+            setLoading(false);
         }
     };
     
@@ -43,6 +44,7 @@ const SignIn = () => {
                     <img src={logo} alt="Clear Money Logo" className="signin-logo" />
                 </Link>
                 <h2>Sign In</h2>
+                {error && <div className="error-message">{error}</div>}
                 <input
                     type="email"
                     placeholder="Email Address"
@@ -57,7 +59,13 @@ const SignIn = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
-                <button type="submit" className="signin-btn">Sign In</button>
+                <button 
+                    type="submit" 
+                    className="signin-btn" 
+                    disabled={loading}
+                >
+                    {loading ? 'Signing In...' : 'Sign In'}
+                </button>
                 <div className="links">
                     Don't have an account? <Link to="/signup">Sign Up</Link>
                 </div>
